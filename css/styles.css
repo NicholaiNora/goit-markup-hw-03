@@ -1,0 +1,180 @@
+:root {
+    --OCEAN: rgba(64, 75, 191, 1);
+    --WHITE: rgba(255, 255, 255, 1);
+    --NAVY-BLUE: rgba(46, 47, 66, 1);
+    --SLATE: rgba(67, 68, 85, 1);
+    --IRIS: rgba(77, 90, 229, 1);
+    --CLOUD: rgba(244, 244, 253, 1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--SLATE, #434455);
+    background-color: var(--WHITE, #fff);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+}
+/* HEADER */ 
+ 
+/* LOGO */
+.logo {
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--IRIS, #4d5ae5);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav .logo-head {
+    color: var(--NAVY-BLUE);
+}
+
+
+/* NAVIGATION */
+nav > .list .item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE);
+}
+
+/* Link style for Navigation and Address */
+.list  {
+    list-style: none;
+    font-style: normal;
+}
+
+
+.list .link {
+    text-decoration: none;
+    color: var(--NAVY-BLUE, #2e2f42);
+}
+
+.list .link:hover,
+.list .link:focus {
+    color: var(--OCEAN, #404bbf);
+}
+
+
+/* ADDRESS */
+.address {
+    font-style: normal;
+}
+
+address > .list .link {
+    font-size: 16px;
+    color: var(--SLATE, #434455);
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+
+/* MAIN */
+
+/* 1st SECTION */
+.main-sec {
+    background-color: var(--NAVY-BLUE, #2e2f42);
+}
+
+.main-sec > .main-header {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--WHITE);
+}
+
+.main-sec > .btn {
+    color: var(--WHITE);
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--IRIS);
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+/* 2nd SECTION and 3rd Section Title and Description */
+
+.title, 
+.btn-img .app-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE);
+}
+
+.description,
+.btn-img .app-selector {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: var(--SLATE);
+}
+
+/* 3rd SECTION and 4th Section Header */
+
+.sub-header {
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--NAVY-BLUE);
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+/* 4th SECTION */
+.team {
+    background-color: var(--CLOUD);
+}
+
+.team > .list .item {
+    background-color: var(--WHITE);
+}
+
+/* PORTFOLIO BUTTON */
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--IRIS);
+    background-color: var(--CLOUD);
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.5;
+}   
+
+.btn:hover,
+.btn:focus {
+    color: var(--WHITE);
+    background-color: var(--OCEAN);
+   
+}
+
+/* FOOTER */
+
+
+.foot {
+    background-color: var(--NAVY-BLUE);
+}
+
+.foot .logo-foot {
+    color: var(--CLOUD);
+}
+
+.foot > .phrase {
+    line-height: 1.5;
+    color: var(--CLOUD);
+    letter-spacing: 0.02em;
+}   
+
