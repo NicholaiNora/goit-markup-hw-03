@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --OCEAN: rgba(64, 75, 191, 1);
     --WHITE: rgba(255, 255, 255, 1);
@@ -35,12 +41,12 @@ nav .logo-head {
 
 
 /* NAVIGATION */
-nav > .list .item {
+nav .list .item {
+    color: var(--NAVY-BLUE);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--NAVY-BLUE);
 }
 
 /* Link style for Navigation and Address */
@@ -62,11 +68,8 @@ nav > .list .item {
 
 
 /* ADDRESS */
-.address {
-    font-style: normal;
-}
 
-address > .list .link {
+.address .link {
     font-size: 16px;
     color: var(--SLATE, #434455);
     line-height: 1.5;
@@ -78,20 +81,20 @@ address > .list .link {
 /* MAIN */
 
 /* 1st SECTION */
-.main-sec {
+.hero {
     background-color: var(--NAVY-BLUE, #2e2f42);
 }
 
-.main-sec > .main-header {
+.hero .main-heading {
+    color: var(--WHITE);
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--WHITE);
 }
 
-.main-sec > .btn {
+.hero .btn {
     color: var(--WHITE);
     font-family: 'Roboto', sans-serif;
     background-color: var(--IRIS);
@@ -102,27 +105,25 @@ address > .list .link {
     cursor: pointer;
 }
 
-/* 2nd SECTION and 3rd Section Title and Description */
+/* 2nd, 3rd Section, Images Section Title and Description */
 
-.title, 
-.btn-img .app-header {
+.title {
+    color: var(--NAVY-BLUE);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--NAVY-BLUE);
 }
 
-.description,
-.btn-img .app-selector {
+.description {
+    color: var(--SLATE);
     font-size: 16px;
     letter-spacing: 0.02em;
-    color: var(--SLATE);
 }
 
 /* 3rd SECTION and 4th Section Header */
 
-.sub-header {
+.sub-heading {
     font-size: 36px;
     line-height: 1.11;
     color: var(--NAVY-BLUE);
@@ -136,7 +137,7 @@ address > .list .link {
     background-color: var(--CLOUD);
 }
 
-.team > .list .item {
+.team .item {
     background-color: var(--WHITE);
 }
 
@@ -172,9 +173,15 @@ address > .list .link {
     color: var(--CLOUD);
 }
 
-.foot > .phrase {
+.foot .phrase {
     line-height: 1.5;
     color: var(--CLOUD);
     letter-spacing: 0.02em;
 }   
+
+
+
+.container {
+    width: 1158px;
+}
 
