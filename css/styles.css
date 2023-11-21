@@ -4,30 +4,6 @@
     box-sizing: border-box;
 }
 
-.page-container {
-    width: 1158px;
-}
-
-img {
-    display: block;
-}
-
-.header {
-    border-bottom: 1px solid var(--CORNFLOWER, #2E2F42)
-}
-
-.header-container {
-    display: flex;
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-
-}
-
-.nav {
-    display:flex;
-    align-items: center;
-}
 :root {
     --OCEAN: rgba(64, 75, 191, 1);
     --WHITE: rgba(255, 255, 255, 1);
@@ -46,8 +22,34 @@ body {
     font-style: normal;
     line-height: 1.5;
 }
+
 /* HEADER */ 
- 
+
+.page-container {
+    width: 1158px;
+}
+
+img {
+    display: block;
+}
+
+.header {
+    border-bottom: 1px solid var(--CORNFLOWER, #2E2F42)
+}
+
+.header .container {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.nav {
+    display:flex;
+    align-items: center;
+}
+
 /* LOGO */
 .logo {
     font-size: 18px;
@@ -69,6 +71,8 @@ nav .logo-head {
 /* NAVIGATION */
 .nav .list {
     display: flex;
+    gap: 40px;
+    padding: 24px 0;
 }
 
 .nav .list .item {
@@ -77,8 +81,6 @@ nav .logo-head {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    gap: 40px;
-    padding: 24px 0
 }
 
 
@@ -101,6 +103,10 @@ nav .logo-head {
 
 
 /* ADDRESS */
+.address {
+    display: flex;
+    align-items: center;
+}
 
 .address .link {
     font-size: 16px;
